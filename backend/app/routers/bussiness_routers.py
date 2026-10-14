@@ -171,7 +171,7 @@ def delete_note(
     "/notes/{note_id}",
     status_code=status.HTTP_204_NO_CONTENT
 )
-def delete_note(
+def change_pinned_status(
     note_id : int,
     user : User = Depends(get_current_user),
     db : Session = Depends(get_db)
