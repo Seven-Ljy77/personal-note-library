@@ -1,0 +1,1 @@
+TRUNCATE TABLE notes, refreshtokens, users RESTART IDENTITY;
