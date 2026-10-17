@@ -41,7 +41,7 @@ class GetNoteListResponse(BaseModel) :
     id : int
     title : str
     created_at : datetime
-    update_at : datetime
+    updated_at : datetime
 
 class CreateNoteRequest(BaseModel) :
     title : str
