@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="mine.css">
+    </head>
+    <body>
+        <div class="headers">
+            <h1>Personal Note Library</h1>
+            <button id="logout-btn">Logout</button>
+        </div>
+
+        <div class="input-section">
+            <input class="input" id="id-input" placeholder="note id">
+            <input class="input" id="title-input" placeholder="title">
+            <input class="input" id="content-input" placeholder="content">
+        </div>
+
+        <div class="btn-section">
+            <button class="btn" id="user-profile-btn">User Profile</button>
+            <button class="btn" id="note-list-btn">Note List</button>
+            <button class="btn" id="create-note-btn">Create Note (title , content)</button>
+            <button class="btn" id="get-note-btn">Get Note (note id)</button>
+            <button class="btn" id="patch-note-btn">Patch Note (note id , title , content)</button>
+            <button class="btn" id="delete-note-btn">Delete Note (note id)</button>
+            <button class="btn" id="change-pinned-status-btn">Chang Pinned Status (note id)</button>
+        </div>
+
+        <div id="display">
+            
+        </div>
+
+        <script src="mine.js" type="module"></script>
+    </body>
+</html>

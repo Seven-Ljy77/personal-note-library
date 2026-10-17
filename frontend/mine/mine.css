@@ -1,0 +1,51 @@
+.headers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(190, 255, 255);
+}
+
+#logout-btn {
+    width: 80px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: rgb(201, 255, 190);
+}
+
+.input {
+    margin: 10px;
+    height: 30px;
+    width: 250px;
+}
+
+.btn-section {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: rgb(187, 214, 255);
+}
+
+.btn {
+    margin: 10px;
+    height: 30px;
+    width: 250px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border: 1px solid black;
+    border-collapse: collapse;  
+}
+
+li {
+    margin: 20px;
+}
