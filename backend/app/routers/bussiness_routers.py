@@ -40,7 +40,7 @@ def get_note_list(
     notes = list(user.notes)
 
     # 处理置顶
-    notes.sort(key=lambda x : x.is_pinned , reverse=True)
+    notes.sort(key=lambda x: (not x.is_pinned, x.id))
 
     return notes
 
