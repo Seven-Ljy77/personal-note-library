@@ -194,6 +194,8 @@ def change_pinned_status(
 
     note.is_pinned = not note.is_pinned
 
+    db.commit()
+
     return Response(
         status_code=status.HTTP_204_NO_CONTENT
     )
