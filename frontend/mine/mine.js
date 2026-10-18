@@ -277,5 +277,8 @@ async function logout() {
     }
 
     window.alert("退出登录成功 !");
+    localStorage.removeItem("access_token");
+    localStorage.removeItem("refresh_token");
+    localStorage.removeItem("token_type");
     window.location.href = "../index/index.html"
 }
