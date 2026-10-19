@@ -7,4 +7,6 @@ pwdlib[argon2]
 python-dotenv 
 email-validator
 pydantic
-alembic[standard]
+alembic
+pytest
+httpx2
