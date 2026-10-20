@@ -1,0 +1,31 @@
+name: personal-note-library
+
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:?请设置 POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?请设置 POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB:?请设置 POSTGRES_DB}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres", "-d", "personal_note_library"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+  fastapi:
+    image: note-backend:learning
+    build:
+      context: ../backend
+    env_file:
+      - ../backend/.env
+    ports:
+      - "127.0.0.1:8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
