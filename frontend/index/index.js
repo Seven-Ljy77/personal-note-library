@@ -1,4 +1,4 @@
-const base_url = "http://127.0.0.1:8000";
+const base_url = "https://notes.desktop-pet.cn";
 
 document.getElementById("login-btn").addEventListener(
     "click",

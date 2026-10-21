@@ -1,7 +1,7 @@
 import { trans_list_to_html, trans_obj_to_html , display } from "../utils.js";
 import { request } from "./api.js";
 
-export const base_url = "http://127.0.0.1:8000";
+export const base_url = "https://notes.desktop-pet.cn";
 
 document.getElementById("user-profile-btn").addEventListener(
     "click" , 
